@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2e2f42;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4d5ae5;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2e2f42;
+  font-weight: 500;
+}
+
+.contacts ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #434455;
+  font-size: 14px;
+}
+
+/* Hero */
+.hero {
+  background-color: #2e2f42;
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #4d5ae5;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Features */
+.features ul {
+  display: flex;
+  gap: 20px;
+  padding: 60px 40px;
+  list-style: none;
+}
+
+.features li {
+  flex: 1;
+}
+
+/* Team */
+.team {
+  background-color: #f4f4fd;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.team ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.team li {
+  background: #fff;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.portfolio ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.portfolio li {
+  background: #fff;
+  border: 1px solid #e7e9fc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio h3 {
+  font-size: 18px;
+  margin: 12px 0 4px;
+}
+
+.portfolio p {
+  color: #434455;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+  color: #f4f4fd;
+  text-align: center;
+  padding: 40px;
+}
+
+.footer .logo {
+  color: #4d5ae5;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.hidden {
+  display: none;
+}
