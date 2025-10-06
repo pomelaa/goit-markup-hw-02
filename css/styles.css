@@ -1,3 +1,8 @@
+:root {
+  --ftr-desc-color: #f4f4fd;
+}
+
+/* === БАЗА === */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -19,6 +24,8 @@ body {
   padding: 20px 0;
 }
 
+.nav-main {}
+
 .logo-main {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -28,9 +35,10 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+  display: inline-block;
 }
 
-.logo-spn {
+.logo-spn, .logo-spn-ftr {
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -40,7 +48,9 @@ body {
   text-transform: uppercase;
 }
 
-.nav-main {}
+.logo-spn-ftr {
+  color: #f4f4fd;
+}
 
 .nav-list {
   list-style: none;
@@ -53,12 +63,12 @@ body {
 .nav-item {}
 
 .nav-link {
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
@@ -67,26 +77,32 @@ body {
   color: #404bbf;
 }
 
+/* === ADDRESS === */
 .adr-main {
   font-style: normal;
-  display: flex;
-  gap: 40px;
 }
 
-.adr-mail,
-.adr-tel {
-  text-decoration: none;
-  color: #434455;
+.adr-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.adr-item {}
+
+.adr-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.adr-mail:hover,
-.adr-tel:hover,
-.adr-mail:focus,
-.adr-tel:focus {
+.adr-link:hover,
+.adr-link:focus {
   color: #404bbf;
 }
 
@@ -151,7 +167,9 @@ body {
   padding: 0;
 }
 
-.features-item {}
+.features-item {
+  background-color: #fff;
+}
 
 .features-subtitle {
   font-weight: 500;
@@ -295,22 +313,11 @@ body {
   color: #f4f4fd;
 }
 
-.logo-main .logo-spn {
-  color: #f4f4fd;
-}
-
 .ftr-desc {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--ftr-desc-color);
   max-width: 264px;
   margin: 0;
 }
-
-/* === ОБЩИЕ СТИЛИ (для всех секций) === */
-.features-title,
-.team-title,
-.portfolio-title {
-  font-family: "Roboto", sans-serif;
- }
