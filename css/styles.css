@@ -3,7 +3,6 @@
   --ocean: #404bbf;
   --navy-blue: #2e2f42;
   --slate: #434455;
-  --light-slate: #8e8f99;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
   --white: #ffffff;
@@ -60,7 +59,6 @@ img {
   overflow: hidden;
 }
 
-/* HEADER */
 .page-header {
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -140,7 +138,6 @@ img {
   color: var(--ocean);
 }
 
-/* HERO */
 .hero-section {
   background-color: var(--navy-blue);
   text-align: center;
@@ -177,7 +174,6 @@ img {
   background-color: var(--ocean);
 }
 
-/* SECTIONS */
 .section {
   padding: 120px 0;
 }
@@ -192,7 +188,6 @@ img {
   margin-bottom: 72px;
 }
 
-/* FEATURES */
 .features-list {
   display: flex;
   gap: 24px;
@@ -218,7 +213,6 @@ img {
   color: var(--slate);
 }
 
-/* TEAM */
 .team-section {
   background-color: var(--cloud);
 }
@@ -260,7 +254,6 @@ img {
   margin-bottom: 32px;
 }
 
-/* PORTFOLIO */
 .portfolio-section {
   padding: 120px 0;
 }
@@ -303,7 +296,6 @@ img {
   margin: 8px 16px 32px;
 }
 
-/* FOOTER */
 .footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
@@ -328,4 +320,4 @@ img {
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
-} 
+}
