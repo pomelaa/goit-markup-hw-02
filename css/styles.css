@@ -1,9 +1,16 @@
 :root {
   --iris: #4d5ae5;
+  --ocean: #404bbf;
   --navy-blue: #2e2f42;
   --slate: #434455;
-  --white: #ffffff;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -13,6 +20,31 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -28,31 +60,17 @@ body {
   overflow: hidden;
 }
 
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
 /* HEADER */
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
@@ -65,6 +83,7 @@ ul {
   color: var(--iris);
   text-decoration: none;
   margin-right: 76px;
+  display: inline-block;
 }
 
 .logo-part {
@@ -78,7 +97,6 @@ ul {
 .nav-list {
   display: flex;
   gap: 40px;
-  margin-right: auto;
 }
 
 .nav-link {
@@ -95,11 +113,12 @@ ul {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-list {
@@ -118,15 +137,12 @@ ul {
 
 .address-link:hover,
 .address-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 /* HERO */
 .hero-section {
   background-color: var(--navy-blue);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../img/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
   text-align: center;
   padding: 188px 0;
 }
@@ -141,7 +157,7 @@ ul {
 }
 
 .hero-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -158,10 +174,10 @@ ul {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
 }
 
-/* COMMON SECTION STYLES */
+/* SECTIONS */
 .section {
   padding: 120px 0;
 }
@@ -183,7 +199,7 @@ ul {
 }
 
 .features-item {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .features-title {
@@ -199,6 +215,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 /* TEAM */
@@ -209,18 +226,18 @@ ul {
 .team-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 .team-card {
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
 }
 
 .team-card img {
-  display: block;
   width: 100%;
 }
 
@@ -238,15 +255,14 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
   text-align: center;
   margin-bottom: 32px;
-  color: var(--slate);
 }
 
 /* PORTFOLIO */
 .portfolio-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .portfolio-list {
@@ -261,11 +277,12 @@ ul {
 }
 
 .portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item img {
-  display: block;
   width: 100%;
 }
 
@@ -302,7 +319,6 @@ ul {
 }
 
 .footer .logo {
-  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -312,9 +328,4 @@ ul {
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
-}
-
-/* Дополнительно: hover/focus для ссылок в футере (если будет вторая часть) */
-.footer a {
-  text-decoration: none;
-}
+} 
