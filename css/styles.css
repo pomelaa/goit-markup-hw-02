@@ -13,6 +13,7 @@ body {
   color: var(--slate);
   background-color: var(--white);
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -39,6 +40,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -52,6 +54,7 @@ img {
 .nav-link {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
@@ -72,6 +75,7 @@ img {
 
 .address-link {
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
   text-decoration: none;
@@ -127,12 +131,14 @@ img {
 .features-title {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
 
 .features-text {
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
@@ -144,6 +150,7 @@ img {
 
 .section-title {
   font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -171,12 +178,14 @@ img {
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
 
 .portfolio-text {
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
@@ -195,6 +204,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -207,9 +217,7 @@ img {
 }
 
 .footer-description {
+  line-height: 1.5;
   color: var(--cloud);
   letter-spacing: 0.02em;
-  max-width: 264px;
-}
-
-
+ }
