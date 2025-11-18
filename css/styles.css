@@ -19,7 +19,6 @@ body {
 
 h1, h2, h3, p, ul {
   margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -31,12 +30,11 @@ img {
 }
 
 /* Header */
-.page-header {
-}
 
-.header-container {
-}
+.page-header {}
+.header-container {}
 
+/* LOGO — общий стиль */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -46,12 +44,14 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
- }
+}
 
-.logo-part {
+/* logo span в ХЕДЕРЕ */
+.header-container .logo-part {
   color: #2e2f42;
 }
 
+/* Навигация */
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -62,17 +62,14 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Hover & Focus nav — исправлено под GoIT */
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: var(--ocean);
 }
 
 .address {
   font-style: normal;
-  margin-left: auto;
-}
-
-.address-list {
 }
 
 .address-link {
@@ -119,19 +116,13 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF;
+  background-color: var(--ocean);
   color: var(--white);
 }
 
 /* Features section */
 .features-section {
   background-color: var(--cornflower);
-}
-
-.features-list {
-}
-
-.features-item {
 }
 
 .features-title {
@@ -163,18 +154,13 @@ img {
   color: var(--navy-blue);
 }
 
-.team-list {
-}
-
 .team-card {
   background-color: var(--white);
 }
 
+/* Portfolio */
 .portfolio-section {
   background-color: var(--cloud);
-}
-
-.portfolio-list {
 }
 
 .portfolio-item {
@@ -196,32 +182,18 @@ img {
   color: var(--slate);
 }
 
-
 /* Footer */
 .footer {
   background-color: var(--navy-blue);
 }
 
-.footer-container {
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  text-decoration: none;
-}
-
-.logo-part {
+/* logo span в ФУТЕРЕ */
+.footer .logo-part {
   color: #f4f4fd;
 }
 
 .footer-text {
   line-height: 1.5;
-  color: var(--cloud); /* --cloud: #f4f4fd; */
+  color: #f4f4fd;
   letter-spacing: 0.02em;
 }
