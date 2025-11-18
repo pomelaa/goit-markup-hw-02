@@ -11,7 +11,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate);
-  background-color: var(--white);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -29,13 +28,6 @@ img {
   max-width: 100%;
 }
 
-/* Header */
-.page-header {
-}
-
-.header-container {
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -45,7 +37,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
- }
+}
 
 .logo-part {
   color: #2e2f42;
@@ -70,9 +62,6 @@ img {
   font-style: normal;
 }
 
-.address-list {
-}
-
 .address-link {
   font-size: 16px;
   line-height: 1.5;
@@ -87,7 +76,6 @@ img {
   color: #404bbf;
 }
 
-/* Hero section */
 .hero-section {
   background-color: var(--navy-blue);
   text-align: center;
@@ -96,7 +84,6 @@ img {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
 }
@@ -116,18 +103,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF
- }
-
-/* Features section */
-.features-section {
-  background-color: var(--cornflower);
-}
-
-.features-list {
-}
-
-.features-item {
+  background-color: #404BBF;
 }
 
 .features-title {
@@ -145,36 +121,12 @@ img {
   color: var(--slate);
 }
 
-/* Team section */
-.team-section {
-  background-color: var(--cloud);
-}
-
 .section-title {
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
-}
-
-.team-list {
-}
-
-.team-card {
-  background-color: var(--white);
-}
-
-.portfolio-section {
-  background-color: var(--cloud);
-}
-
-.portfolio-list {
-}
-
-.portfolio-item {
-  background-color: var(--white);
 }
 
 .portfolio-title {
@@ -192,14 +144,8 @@ img {
   color: var(--slate);
 }
 
-
-/* Footer */
 .footer {
-  background-color: var(--navy-blue); 
-}
-
-.footer-container {
-
+  background-color: var(--navy-blue);
 }
 
 .footer-logo {
@@ -211,7 +157,6 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -222,4 +167,4 @@ img {
   line-height: 1.5;
   color: var(--cloud);
   letter-spacing: 0.02em;
- }
+}
