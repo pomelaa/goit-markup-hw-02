@@ -63,10 +63,11 @@ img {
 }
 
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--ocean);
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
+  color: #404bbf;
 }
+
 
 .address {
   font-style: normal;
@@ -83,8 +84,9 @@ img {
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--ocean);
+  color: #404bbf;
 }
+
 
 /* Hero section */
 .hero-section {
@@ -117,7 +119,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--ocean);
+  background-color: #404bbf;
   color: var(--white);
 }
 
