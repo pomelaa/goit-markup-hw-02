@@ -119,11 +119,7 @@ img {
   background-color: #404bbf;
   color: var(--white);
 }
-
-/* Features section */
-.features-section {
-  background-color: var(--cornflower);
-}
+ 
 
 .features-title {
   font-weight: 500;
@@ -159,10 +155,8 @@ img {
 }
 
 /* Portfolio */
-.portfolio-section {
-  background-color: var(--cloud);
-}
 
+ 
 .portfolio-item {
   background-color: var(--white);
 }
@@ -192,6 +186,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  text-decoration: none;
 }
 
 .footer-logo-part {
