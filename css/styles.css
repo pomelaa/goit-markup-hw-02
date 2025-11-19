@@ -61,16 +61,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list .nav-link:hover,
-.nav-list .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #404bbf;
 }
 
-/* 🔥 ДОБАВЛЕНО: отдельные стили для первой ссылки меню */
-.nav-list li:first-child .nav-link:hover {
-  color: #404bbf;
-}
-
+.nav-list li:first-child .nav-link:hover,
 .nav-list li:first-child .nav-link:focus {
   color: #404bbf;
 }
